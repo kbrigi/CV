@@ -3,17 +3,19 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #E8E0C8;">
     <div class="navbar" style="display: flex;">
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#portfolio"> Portfolio</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#coding">Skills</a>
-            <a href="#contact">Contact</a>
+            <a class="nav_text" href="#about">About Me</a>
+            <a class="nav_text" href="#portfolio"> Portfolio</a>
+            <a class="nav_text" href="#education">Education</a>
+            <a class="nav_text" href="#experience">Experience</a>
+            <a class="nav_text" href="#coding">Skills</a>
+            <a class="nav_text" href="#contact">Contact</a>
         </nav>
         <a class="download" href="Karda-Brigitta-CV.pdf" download="Karda-Brigitta-CV.pdf"><i class="fa fa-download" style="font-size:30px;color: #1A4146;"></i></a>
     </div>  
@@ -25,7 +27,7 @@
                 <i class="fa fa-github" style="padding-top:7%;font-size:35px;color: #1A4146;"></i></a>
         </div>
         <div>
-            <a href="www.linkedin.com/in/brigitta-karda-087a2b261">
+            <a href="https://www.linkedin.com/in/brigitta-karda-087a2b261/">
                 <i class="fa fa-linkedin-square" style="padding-top:3%;font-size:35px;color: #1A4146;"></i></a>
         </div>
     </div>
@@ -165,7 +167,7 @@
                             <span class="circle">&#9711;</span>
                             <div class="text education-text">
                                 <h3> Baccalaureate</h3>
-                                <p>Lic. Teor. Báthory Istán, Cluj-Napoca
+                                <p>Lic. Teor. Báthory István, Cluj-Napoca
                                     <br>Profile: Mathematics and Informatics, intensive German
                                 </p>
                                 
@@ -173,6 +175,52 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/msg.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                    <h3>Internship</h3>
+                    <p>Internship at .msg systems</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tiff.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                    <h3>Volunteering</h3>
+                    <p>TIFF volunteer</p>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="images/omc.jpg" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                    <h3>Volunteering</h3>
+                    <p>O Masa Calda</p>
+                    </div>  
+                </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </section>
 
@@ -327,7 +375,7 @@
                 </div>
             </div>
             <div class="text" style="font-weight: 50;">
-                <div style="display: flex; margin-top: 5%;">
+                <div style="display: flex;">
                     <i class="fa fa-phone" style="font-size:36px;"></i>
                     <h4 class="h4-slim">+40756804300</h4>
                 </div>
@@ -353,6 +401,9 @@
             </div>
         </section>
 
+        <footer class="footer_text">
+            Copyright&copy; 2023 | All Rights Reserved
+        </footer>
     </div>
 
 </body>
