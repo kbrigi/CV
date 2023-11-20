@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-color: #E8E0C8;">
-    <div class="navbar" style="display: flex;">
-        <nav>
-            <a class="nav_text" href="#about">About Me</a>
-            <a class="nav_text" href="#portfolio"> Portfolio</a>
-            <a class="nav_text" href="#education">Education</a>
-            <a class="nav_text" href="#experience">Experience</a>
-            <a class="nav_text" href="#coding">Skills</a>
-            <a class="nav_text" href="#contact">Contact</a>
+    <div class="mynavbar">
+        <nav class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>       
+            </div>
+            
+            <ul class="nav nav-menu">
+                <li><a class="nav_text nav-link" href="#about">About Me</a></li>
+                <li><a class="nav_text nav-link" href="#portfolio"> Portfolio</a></li>
+                <li><a class="nav_text nav-link" href="#education">Education</a></li>
+                <li><a class="nav_text nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav_text nav-link" href="#coding">Skills</a></li>
+                <li><a class="nav_text nav-link" href="#contact">Contact</a></li>
+            </ul>
         </nav>
         <a class="download" href="Karda-Brigitta-CV.pdf" download="Karda-Brigitta-CV.pdf"><i class="fa fa-download" style="font-size:30px;color: #1A4146;"></i></a>
     </div>  
@@ -37,7 +51,7 @@
                 <img src="images/myimg.jpg" alt="portrait" >
             </div>
             <div class="intro-text">
-                <h2>Hello, I’m Brigitta Karda</h2>
+                <h2 class="hello">Hello, I’m Brigitta Karda</h2>
                 <h3>A master student at Media Communication in Cluj-Napoca, Romania. I’m experienced in designing and building websites and
                      mobile applications.</h3>
             </div>
@@ -184,7 +198,7 @@
 
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
@@ -406,6 +420,21 @@
         </footer>
     </div>
 
+
+    <script type="text/javascript">
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        }))
+    </script>
 </body>
 
 </html>
