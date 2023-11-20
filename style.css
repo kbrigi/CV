@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
+  min-height: 40px;
 }
 
 nav {
@@ -26,14 +26,15 @@ nav {
   margin-right: 10%;
   width: 65%;
   background-color: #E8E0C8;
+  margin-bottom: 0 !important;
 }
 
 .nav_text {
-    font-family: Arial;
-    color: #1A4146;
-    font-size:x-large;
-    padding-left: 5%;
-    align-items: center;
+  font-family: Arial;
+  color: #1A4146;
+  font-size:x-large;
+  padding-left: 5%;
+  align-items: center;
 }
 
 .nav-link{
@@ -333,4 +334,15 @@ li {
   .special-img{
     max-width: 100% !important; 
   }
+
+  .circle{
+    margin-left: 3%;
+    font-size:2vw; 
+    color: #1A4146;
+  }
+  
+  .text-coding{
+    padding-left: 3%;
+  }
+
 }
