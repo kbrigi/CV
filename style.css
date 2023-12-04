@@ -27,6 +27,13 @@ nav {
   width: 65%;
   background-color: #E8E0C8;
   margin-bottom: 0 !important;
+
+}
+
+.nav{
+    --bs-nav-link-color:  #1A4146;
+  --bs-nav-link-hover-color:  #1A4146;
+  --bs-nav-link-color:  #1A4146;
 }
 
 .nav_text {
